@@ -1,12 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        Tree tree69 = new Tree();
-        BSTNode root = new BSTNode(5);
-        tree69.RootNode = root;
-        BSTNode right = new BSTNode(7);
-        BSTNode left = new BSTNode(6);
-        root.right = right;
-        root.left = left;
-        System.out.println(Tree.Search(root,5).right.key);
+      Tree bst=new Tree(new BSTNode(0));
+​
+      bst.insert(5);
+      bst.insert(2);
+      bst.insert(6);
+      bst.insert(9);
+      bst.insert(4);
+      bst.insert(51);
+      bst.insert(9);
+      bst.insert(3);
+      bst.insert(66);
+      bst.insert(-66);
+      bst.insert(-4);
+      bst.insert(-1);
+      bst.insert(-2);
+        System.out.println();
     }
 }
